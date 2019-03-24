@@ -31,6 +31,7 @@ namespace Szakdolgozat
 
         private void adatokFill()
         {
+            MessageBox.Show(oEvfId);
             var cmd = new MySqlCommand("SELECT Fnev,Fid FROM felhasznalo " +
                 "WHERE Szid=2 OR Szid=3 " +
                 "ORDER BY Fnev ASC", conn);
