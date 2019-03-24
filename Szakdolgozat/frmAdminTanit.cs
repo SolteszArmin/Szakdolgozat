@@ -18,19 +18,22 @@ namespace Szakdolgozat
         private Point lastLocation;
 
         MySqlConnection conn;
-        string oEvfId;
+        string oEvfId, evfolyam, osztaly;
         List<string> Fid;
 
-        public frmAdminTanit(MySqlConnection conn,string oEvfId)
+        public frmAdminTanit(MySqlConnection conn,string oEvfId,string evfolyam, string osztaly)
         {
             this.conn = conn;
             this.oEvfId = oEvfId;
+            this.evfolyam = evfolyam;
+            this.osztaly = osztaly;
             InitializeComponent();
             adatokFill();
         }
 
         private void adatokFill()
         {
+            MessageBox.Show(oEvfId);
             var cmd = new MySqlCommand("SELECT Fnev,Fid FROM felhasznalo " +
                 "WHERE Szid=2 OR Szid=3 " +
                 "ORDER BY Fnev ASC", conn);
@@ -45,15 +48,7 @@ namespace Szakdolgozat
             }
             conn.Close();
 
-            cmd = new MySqlCommand("SELECT Onev, evfolyamok FROM ((osztalyevfolyam " +
-                "INNER JOIN osztaly ON osztaly.Oid=osztalyevfolyam.Oid) " +
-                "INNER JOIN evfolyam ON evfolyam.id=osztalyevfolyam.Evfid) " +
-                $"WHERE osztalyevfolyam.Oid={oEvfId}", conn);
-            conn.Open();
-            reader = cmd.ExecuteReader();
-            reader.Read();
-            tbOsztaly.Text = reader[0].ToString() + " | " + reader[1].ToString();
-            conn.Close();
+            tbOsztaly.Text = osztaly + " | " + evfolyam;
         }
 
         private void btnClose_Click(object sender, EventArgs e)

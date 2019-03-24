@@ -133,7 +133,9 @@ namespace Szakdolgozat
         private void btnTanarAdd_Click(object sender, EventArgs e)
         {
             string oszEvfId = dgvOsztaly.SelectedRows[0].Cells[0].Value.ToString();
-            var frm = new frmAdminTanit(conn, oszEvfId);
+            string osztaly= dgvOsztaly.SelectedRows[0].Cells[2].Value.ToString();
+            string evfolyam = dgvOsztaly.SelectedRows[0].Cells[1].Value.ToString();
+            var frm = new frmAdminTanit(conn, oszEvfId,osztaly,evfolyam);
             frm.ShowDialog();
         }
     }
