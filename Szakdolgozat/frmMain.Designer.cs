@@ -233,9 +233,9 @@
             // panel4
             // 
             this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel4.Location = new System.Drawing.Point(885, 41);
+            this.panel4.Location = new System.Drawing.Point(923, 41);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(72, 506);
+            this.panel4.Size = new System.Drawing.Size(34, 506);
             this.panel4.TabIndex = 13;
             // 
             // timerProfile
@@ -258,7 +258,7 @@
             this.panelSlide.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelSlide.Location = new System.Drawing.Point(50, 41);
             this.panelSlide.Name = "panelSlide";
-            this.panelSlide.Size = new System.Drawing.Size(287, 506);
+            this.panelSlide.Size = new System.Drawing.Size(365, 506);
             this.panelSlide.TabIndex = 14;
             // 
             // btnModositas
@@ -341,7 +341,7 @@
             // lbProfilom
             // 
             this.lbProfilom.AutoSize = true;
-            this.lbProfilom.Location = new System.Drawing.Point(93, 3);
+            this.lbProfilom.Location = new System.Drawing.Point(139, 3);
             this.lbProfilom.Name = "lbProfilom";
             this.lbProfilom.Size = new System.Drawing.Size(87, 23);
             this.lbProfilom.TabIndex = 1;
@@ -349,7 +349,7 @@
             // 
             // pbProfilePicture
             // 
-            this.pbProfilePicture.Location = new System.Drawing.Point(20, 29);
+            this.pbProfilePicture.Location = new System.Drawing.Point(67, 29);
             this.pbProfilePicture.Name = "pbProfilePicture";
             this.pbProfilePicture.Size = new System.Drawing.Size(234, 215);
             this.pbProfilePicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -363,16 +363,16 @@
             this.panel3.Controls.Add(this.btnRight);
             this.panel3.Controls.Add(this.pbOsztalyKep);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(337, 41);
+            this.panel3.Location = new System.Drawing.Point(415, 41);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(548, 506);
+            this.panel3.Size = new System.Drawing.Size(508, 506);
             this.panel3.TabIndex = 15;
             // 
             // btnLeft
             // 
             this.btnLeft.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnLeft.Image = global::Szakdolgozat.Properties.Resources.arrow_88_32;
-            this.btnLeft.Location = new System.Drawing.Point(17, 262);
+            this.btnLeft.Location = new System.Drawing.Point(6, 257);
             this.btnLeft.Name = "btnLeft";
             this.btnLeft.Size = new System.Drawing.Size(45, 45);
             this.btnLeft.TabIndex = 1;
@@ -383,7 +383,7 @@
             // 
             this.btnRight.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnRight.Image = global::Szakdolgozat.Properties.Resources.arrow_24_32;
-            this.btnRight.Location = new System.Drawing.Point(17, 199);
+            this.btnRight.Location = new System.Drawing.Point(6, 199);
             this.btnRight.Name = "btnRight";
             this.btnRight.Size = new System.Drawing.Size(45, 45);
             this.btnRight.TabIndex = 1;
@@ -393,9 +393,9 @@
             // pbOsztalyKep
             // 
             this.pbOsztalyKep.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pbOsztalyKep.Location = new System.Drawing.Point(82, 0);
+            this.pbOsztalyKep.Location = new System.Drawing.Point(70, 0);
             this.pbOsztalyKep.Name = "pbOsztalyKep";
-            this.pbOsztalyKep.Size = new System.Drawing.Size(466, 506);
+            this.pbOsztalyKep.Size = new System.Drawing.Size(438, 506);
             this.pbOsztalyKep.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbOsztalyKep.TabIndex = 0;
             this.pbOsztalyKep.TabStop = false;
