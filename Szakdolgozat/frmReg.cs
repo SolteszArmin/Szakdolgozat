@@ -46,8 +46,8 @@ namespace Szakdolgozat
                 }
                 else
                 {
-                    email = (tbEmail.Text == "") ? null : $"'{tbEmail.Text}'";
-                    phone = (tbPhone.Text == "") ? null : $"'{tbPhone.Text}'";
+                    email = (tbEmail.Text == "") ? "Nincs" : $"'{tbEmail.Text}'";
+                    phone = (tbPhone.Text == "") ? "Nincs" : $"'{tbPhone.Text}'";
 
                     var hash = SecurePasswordHasher.Hash(tbPw.Text);
                     conn.Open();
