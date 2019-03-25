@@ -44,10 +44,6 @@ namespace Szakdolgozat
                     tbPwRe.Text = "";
                     tbPw.Text = "";
                 }
-                else if (13>DateTime.Today.Year-dtpDate.Value.Year)
-                {
-                    MessageBox.Show("Biztos ebben az évben születtél: " + dtpDate.Value.Year + " ?");
-                }
                 else
                 {
                     email = (tbEmail.Text == "") ? null : $"'{tbEmail.Text}'";
