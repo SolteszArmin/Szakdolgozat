@@ -72,7 +72,6 @@ namespace Szakdolgozat
 
                     MemoryStream ms = new MemoryStream(img);
                     imgList.Add(Image.FromStream(ms));
-
                 }
 
                 pbOsztalyKep.Image = imgList[0];
@@ -135,7 +134,7 @@ namespace Szakdolgozat
                     $"WHERE felhasznalo.Fid = {Fid}", conn);
                 conn.Open();
                 var reader = cmd.ExecuteReader();
-
+                
                 reader.Read();
                 byte[] img = (byte[])reader[0];
 
@@ -176,7 +175,7 @@ namespace Szakdolgozat
                 lbName.Text = reader[1].ToString();
                 lbEmail.Text = "Email: "+email;
                 lbTelSzam.Text = "Telszam: "+telszam;
-                lbOsztaly.Text = "Osztály: -";
+                lbOsztaly.Text = "Osztály: Nincs";
                 lbKor.Text ="Szül. év: "+DateTime.Parse(reader[4].ToString()).ToString("yyyy-MM-dd");
 
                 conn.Close();

@@ -75,6 +75,7 @@ namespace Szakdolgozat
                 $"WHERE Fid={Fid}";
              cmd = new MySqlCommand(cmdStr, conn);
             conn.Open();
+
             reader = cmd.ExecuteReader();
             reader.Read();
             tbNev.Text = reader[0].ToString();
@@ -86,6 +87,7 @@ namespace Szakdolgozat
             cbEvfolyam.SelectedItem = reader[5].ToString();
             fevfolyam = reader[5].ToString();
             cbRank.SelectedItem= reader[6].ToString();
+
             conn.Close();
 
         }

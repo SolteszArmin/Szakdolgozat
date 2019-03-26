@@ -29,7 +29,9 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnMinimize = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
+            this.btnClose = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -48,8 +50,6 @@
             this.button1 = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnProfileReset = new System.Windows.Forms.Button();
-            this.btnMinimize = new System.Windows.Forms.Button();
-            this.btnClose = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -68,6 +68,20 @@
             this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
             this.panel1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseUp);
             // 
+            // btnMinimize
+            // 
+            this.btnMinimize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
+            this.btnMinimize.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnMinimize.Image = global::Szakdolgozat.Properties.Resources.minus_16;
+            this.btnMinimize.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnMinimize.Location = new System.Drawing.Point(352, 0);
+            this.btnMinimize.Name = "btnMinimize";
+            this.btnMinimize.Size = new System.Drawing.Size(41, 41);
+            this.btnMinimize.TabIndex = 3;
+            this.btnMinimize.TabStop = false;
+            this.btnMinimize.UseVisualStyleBackColor = false;
+            this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -76,6 +90,19 @@
             this.label3.Size = new System.Drawing.Size(174, 23);
             this.label3.TabIndex = 0;
             this.label3.Text = "Profil Módosítása";
+            // 
+            // btnClose
+            // 
+            this.btnClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
+            this.btnClose.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnClose.Image = global::Szakdolgozat.Properties.Resources.x_mark_16;
+            this.btnClose.Location = new System.Drawing.Point(393, 0);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(41, 41);
+            this.btnClose.TabIndex = 2;
+            this.btnClose.TabStop = false;
+            this.btnClose.UseVisualStyleBackColor = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // label1
             // 
@@ -231,7 +258,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(186, 44);
             this.button1.TabIndex = 18;
-            this.button1.Text = "Újratöltés";
+            this.button1.Text = "Újra töltés";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -261,33 +288,6 @@
             this.btnProfileReset.TabIndex = 17;
             this.btnProfileReset.UseVisualStyleBackColor = false;
             this.btnProfileReset.Click += new System.EventHandler(this.btnProfileReset_Click);
-            // 
-            // btnMinimize
-            // 
-            this.btnMinimize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
-            this.btnMinimize.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnMinimize.Image = global::Szakdolgozat.Properties.Resources.minus_16;
-            this.btnMinimize.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnMinimize.Location = new System.Drawing.Point(352, 0);
-            this.btnMinimize.Name = "btnMinimize";
-            this.btnMinimize.Size = new System.Drawing.Size(41, 41);
-            this.btnMinimize.TabIndex = 3;
-            this.btnMinimize.TabStop = false;
-            this.btnMinimize.UseVisualStyleBackColor = false;
-            this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
-            // 
-            // btnClose
-            // 
-            this.btnClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
-            this.btnClose.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnClose.Image = global::Szakdolgozat.Properties.Resources.x_mark_16;
-            this.btnClose.Location = new System.Drawing.Point(393, 0);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(41, 41);
-            this.btnClose.TabIndex = 2;
-            this.btnClose.TabStop = false;
-            this.btnClose.UseVisualStyleBackColor = false;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // frmAdminMemberUpdate
             // 
