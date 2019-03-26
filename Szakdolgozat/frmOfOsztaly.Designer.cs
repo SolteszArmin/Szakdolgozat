@@ -33,7 +33,9 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnMinimize = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
+            this.btnClose = new System.Windows.Forms.Button();
             this.dgvOsztaly = new System.Windows.Forms.DataGridView();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -41,8 +43,6 @@
             this.tbKeres = new System.Windows.Forms.TextBox();
             this.btnAddToOsztaly = new System.Windows.Forms.Button();
             this.btnOsztalykepModositas = new System.Windows.Forms.Button();
-            this.btnMinimize = new System.Windows.Forms.Button();
-            this.btnClose = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvOsztaly)).BeginInit();
             this.SuspendLayout();
@@ -62,6 +62,20 @@
             this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
             this.panel1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseUp);
             // 
+            // btnMinimize
+            // 
+            this.btnMinimize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
+            this.btnMinimize.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnMinimize.Image = global::Szakdolgozat.Properties.Resources.minus_16;
+            this.btnMinimize.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnMinimize.Location = new System.Drawing.Point(266, 0);
+            this.btnMinimize.Name = "btnMinimize";
+            this.btnMinimize.Size = new System.Drawing.Size(41, 41);
+            this.btnMinimize.TabIndex = 3;
+            this.btnMinimize.TabStop = false;
+            this.btnMinimize.UseVisualStyleBackColor = false;
+            this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -70,6 +84,19 @@
             this.label3.Size = new System.Drawing.Size(81, 23);
             this.label3.TabIndex = 0;
             this.label3.Text = "Osztály";
+            // 
+            // btnClose
+            // 
+            this.btnClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
+            this.btnClose.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnClose.Image = global::Szakdolgozat.Properties.Resources.x_mark_16;
+            this.btnClose.Location = new System.Drawing.Point(307, 0);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(41, 41);
+            this.btnClose.TabIndex = 2;
+            this.btnClose.TabStop = false;
+            this.btnClose.UseVisualStyleBackColor = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // dgvOsztaly
             // 
@@ -179,33 +206,6 @@
             this.btnOsztalykepModositas.Text = "Osztálykép Módosítása ";
             this.btnOsztalykepModositas.UseVisualStyleBackColor = true;
             this.btnOsztalykepModositas.Click += new System.EventHandler(this.btnOsztalykepModositas_Click);
-            // 
-            // btnMinimize
-            // 
-            this.btnMinimize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
-            this.btnMinimize.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnMinimize.Image = global::Szakdolgozat.Properties.Resources.minus_16;
-            this.btnMinimize.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnMinimize.Location = new System.Drawing.Point(266, 0);
-            this.btnMinimize.Name = "btnMinimize";
-            this.btnMinimize.Size = new System.Drawing.Size(41, 41);
-            this.btnMinimize.TabIndex = 3;
-            this.btnMinimize.TabStop = false;
-            this.btnMinimize.UseVisualStyleBackColor = false;
-            this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
-            // 
-            // btnClose
-            // 
-            this.btnClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
-            this.btnClose.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnClose.Image = global::Szakdolgozat.Properties.Resources.x_mark_16;
-            this.btnClose.Location = new System.Drawing.Point(307, 0);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(41, 41);
-            this.btnClose.TabIndex = 2;
-            this.btnClose.TabStop = false;
-            this.btnClose.UseVisualStyleBackColor = false;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // frmOfOsztaly
             // 
