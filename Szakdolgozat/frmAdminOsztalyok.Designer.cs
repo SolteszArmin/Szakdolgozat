@@ -37,17 +37,17 @@
             this.label3 = new System.Windows.Forms.Label();
             this.btnClose = new System.Windows.Forms.Button();
             this.dgvOsztaly = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
+            this.tbKereses = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.btnOsztalyAdd = new System.Windows.Forms.Button();
+            this.btnTanarAdd = new System.Windows.Forms.Button();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label1 = new System.Windows.Forms.Label();
-            this.tbKereses = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.btnOsztalyAdd = new System.Windows.Forms.Button();
-            this.btnTanarAdd = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvOsztaly)).BeginInit();
             this.SuspendLayout();
@@ -86,7 +86,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(12, 9);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(84, 21);
+            this.label3.Size = new System.Drawing.Size(104, 23);
             this.label3.TabIndex = 0;
             this.label3.Text = "Osztályok";
             // 
@@ -163,50 +163,12 @@
             this.dgvOsztaly.TabIndex = 7;
             this.dgvOsztaly.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvOsztaly_CellDoubleClick);
             // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Osztály ID";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Osztály";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Évfolyam";
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Osztályfőnök";
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "osztalykod";
-            this.Column5.Name = "Column5";
-            this.Column5.ReadOnly = true;
-            this.Column5.Visible = false;
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "evfolyamkod";
-            this.Column6.Name = "Column6";
-            this.Column6.ReadOnly = true;
-            this.Column6.Visible = false;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(16, 71);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 21);
+            this.label1.Size = new System.Drawing.Size(88, 23);
             this.label1.TabIndex = 8;
             this.label1.Text = "Keresés:";
             // 
@@ -215,7 +177,7 @@
             this.tbKereses.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.tbKereses.Location = new System.Drawing.Point(110, 71);
             this.tbKereses.Name = "tbKereses";
-            this.tbKereses.Size = new System.Drawing.Size(198, 22);
+            this.tbKereses.Size = new System.Drawing.Size(198, 26);
             this.tbKereses.TabIndex = 9;
             this.tbKereses.TextChanged += new System.EventHandler(this.tbKereses_TextChanged);
             // 
@@ -225,7 +187,7 @@
             this.label2.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label2.Location = new System.Drawing.Point(16, 124);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(273, 16);
+            this.label2.Size = new System.Drawing.Size(349, 19);
             this.label2.TabIndex = 10;
             this.label2.Text = "Dupla kattintással módosíthatja az osztályfőnököt";
             // 
@@ -258,6 +220,45 @@
             this.btnTanarAdd.Text = "Kijelölt osztályhoz tanár rendelése";
             this.btnTanarAdd.UseVisualStyleBackColor = false;
             this.btnTanarAdd.Click += new System.EventHandler(this.btnTanarAdd_Click);
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Osztály ID";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.Visible = false;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Osztály";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Évfolyam";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Osztályfőnök";
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "osztalykod";
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            this.Column5.Visible = false;
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "evfolyamkod";
+            this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
+            this.Column6.Visible = false;
             // 
             // frmAdminOsztalyok
             // 
@@ -296,12 +297,12 @@
         private System.Windows.Forms.TextBox tbKereses;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnOsztalyAdd;
+        private System.Windows.Forms.Button btnTanarAdd;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
-        private System.Windows.Forms.Button btnTanarAdd;
     }
 }
