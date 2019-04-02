@@ -102,6 +102,7 @@
             // 
             // cbOfo
             // 
+            this.cbOfo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbOfo.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.cbOfo.FormattingEnabled = true;
             this.cbOfo.Location = new System.Drawing.Point(175, 154);

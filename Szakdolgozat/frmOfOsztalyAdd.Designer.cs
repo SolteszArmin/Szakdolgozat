@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
             this.btnMinimize = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
             this.btnClose = new System.Windows.Forms.Button();
             this.cbDiakNev = new System.Windows.Forms.ComboBox();
             this.btnHozzaad = new System.Windows.Forms.Button();
@@ -53,15 +53,6 @@
             this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
             this.panel1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseUp);
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 9);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(55, 23);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Profil";
-            // 
             // btnMinimize
             // 
             this.btnMinimize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
@@ -75,6 +66,15 @@
             this.btnMinimize.TabStop = false;
             this.btnMinimize.UseVisualStyleBackColor = false;
             this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(12, 9);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(55, 23);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Profil";
             // 
             // btnClose
             // 
@@ -91,6 +91,7 @@
             // 
             // cbDiakNev
             // 
+            this.cbDiakNev.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbDiakNev.FormattingEnabled = true;
             this.cbDiakNev.Location = new System.Drawing.Point(12, 125);
             this.cbDiakNev.Name = "cbDiakNev";
