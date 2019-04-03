@@ -42,6 +42,7 @@
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvOsztalyok)).BeginInit();
             this.SuspendLayout();
@@ -191,11 +192,22 @@
             this.Column2.Name = "Column2";
             this.Column2.ReadOnly = true;
             // 
-            // frmOfOsztalyom
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label2.Location = new System.Drawing.Point(60, 143);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(300, 19);
+            this.label2.TabIndex = 13;
+            this.label2.Text = "Dupla kattintással nézheti meg az osztályt.";
+            // 
+            // frmOfOsztalyok
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
             this.ClientSize = new System.Drawing.Size(475, 450);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.dgvOsztalyok);
             this.Controls.Add(this.tbKereses);
             this.Controls.Add(this.label1);
@@ -203,7 +215,7 @@
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "frmOfOsztalyom";
+            this.Name = "frmOfOsztalyok";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmOsztalyom";
             this.panel1.ResumeLayout(false);
@@ -226,5 +238,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.Label label2;
     }
 }

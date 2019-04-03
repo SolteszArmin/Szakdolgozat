@@ -43,6 +43,7 @@
             this.tbKeres = new System.Windows.Forms.TextBox();
             this.btnAddToOsztaly = new System.Windows.Forms.Button();
             this.btnOsztalykepModositas = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvOsztaly)).BeginInit();
             this.SuspendLayout();
@@ -207,11 +208,22 @@
             this.btnOsztalykepModositas.UseVisualStyleBackColor = true;
             this.btnOsztalykepModositas.Click += new System.EventHandler(this.btnOsztalykepModositas_Click);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label2.Location = new System.Drawing.Point(-2, 144);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(350, 19);
+            this.label2.TabIndex = 17;
+            this.label2.Text = "Dupla kattintással menyithatja a személy profilját.";
+            // 
             // frmOfOsztaly
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
             this.ClientSize = new System.Drawing.Size(348, 691);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.btnOsztalykepModositas);
             this.Controls.Add(this.btnAddToOsztaly);
             this.Controls.Add(this.tbKeres);
@@ -245,5 +257,6 @@
         private System.Windows.Forms.TextBox tbKeres;
         private System.Windows.Forms.Button btnAddToOsztaly;
         private System.Windows.Forms.Button btnOsztalykepModositas;
+        private System.Windows.Forms.Label label2;
     }
 }

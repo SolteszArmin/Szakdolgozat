@@ -37,11 +37,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.btnClose = new System.Windows.Forms.Button();
             this.dgvAll = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.tbSearcher = new System.Windows.Forms.TextBox();
-            this.rbNev = new System.Windows.Forms.RadioButton();
-            this.rbRank = new System.Windows.Forms.RadioButton();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.Column6 = new System.Windows.Forms.DataGridViewImageColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -51,6 +46,12 @@
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
+            this.tbSearcher = new System.Windows.Forms.TextBox();
+            this.rbNev = new System.Windows.Forms.RadioButton();
+            this.rbRank = new System.Windows.Forms.RadioButton();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAll)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -170,55 +171,6 @@
             this.dgvAll.TabIndex = 6;
             this.dgvAll.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvAll_CellDoubleClick);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(10, 74);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(80, 23);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Kereső:";
-            // 
-            // tbSearcher
-            // 
-            this.tbSearcher.Location = new System.Drawing.Point(96, 68);
-            this.tbSearcher.Name = "tbSearcher";
-            this.tbSearcher.Size = new System.Drawing.Size(203, 32);
-            this.tbSearcher.TabIndex = 8;
-            this.tbSearcher.TextChanged += new System.EventHandler(this.tbSearcher_TextChanged);
-            // 
-            // rbNev
-            // 
-            this.rbNev.AutoSize = true;
-            this.rbNev.Checked = true;
-            this.rbNev.Location = new System.Drawing.Point(6, 17);
-            this.rbNev.Name = "rbNev";
-            this.rbNev.Size = new System.Drawing.Size(155, 27);
-            this.rbNev.TabIndex = 9;
-            this.rbNev.TabStop = true;
-            this.rbNev.Text = "Név Alapján";
-            this.rbNev.UseVisualStyleBackColor = true;
-            // 
-            // rbRank
-            // 
-            this.rbRank.AutoSize = true;
-            this.rbRank.Location = new System.Drawing.Point(167, 17);
-            this.rbRank.Name = "rbRank";
-            this.rbRank.Size = new System.Drawing.Size(162, 27);
-            this.rbRank.TabIndex = 10;
-            this.rbRank.Text = "Rank Alapján";
-            this.rbRank.UseVisualStyleBackColor = true;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.rbRank);
-            this.groupBox1.Controls.Add(this.rbNev);
-            this.groupBox1.Location = new System.Drawing.Point(305, 51);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(387, 52);
-            this.groupBox1.TabIndex = 11;
-            this.groupBox1.TabStop = false;
-            // 
             // Column6
             // 
             this.Column6.HeaderText = "Kép";
@@ -277,11 +229,71 @@
             this.Column8.Name = "Column8";
             this.Column8.ReadOnly = true;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(10, 74);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(80, 23);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Kereső:";
+            // 
+            // tbSearcher
+            // 
+            this.tbSearcher.Location = new System.Drawing.Point(96, 68);
+            this.tbSearcher.Name = "tbSearcher";
+            this.tbSearcher.Size = new System.Drawing.Size(203, 32);
+            this.tbSearcher.TabIndex = 8;
+            this.tbSearcher.TextChanged += new System.EventHandler(this.tbSearcher_TextChanged);
+            // 
+            // rbNev
+            // 
+            this.rbNev.AutoSize = true;
+            this.rbNev.Checked = true;
+            this.rbNev.Location = new System.Drawing.Point(6, 17);
+            this.rbNev.Name = "rbNev";
+            this.rbNev.Size = new System.Drawing.Size(155, 27);
+            this.rbNev.TabIndex = 9;
+            this.rbNev.TabStop = true;
+            this.rbNev.Text = "Név Alapján";
+            this.rbNev.UseVisualStyleBackColor = true;
+            // 
+            // rbRank
+            // 
+            this.rbRank.AutoSize = true;
+            this.rbRank.Location = new System.Drawing.Point(167, 17);
+            this.rbRank.Name = "rbRank";
+            this.rbRank.Size = new System.Drawing.Size(162, 27);
+            this.rbRank.TabIndex = 10;
+            this.rbRank.Text = "Rank Alapján";
+            this.rbRank.UseVisualStyleBackColor = true;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.rbRank);
+            this.groupBox1.Controls.Add(this.rbNev);
+            this.groupBox1.Location = new System.Drawing.Point(305, 51);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(387, 52);
+            this.groupBox1.TabIndex = 11;
+            this.groupBox1.TabStop = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label2.Location = new System.Drawing.Point(12, 111);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(358, 19);
+            this.label2.TabIndex = 12;
+            this.label2.Text = "Dupla kattintással nyithatja meg a módosítás fület.";
+            // 
             // frmAdminOtherMembers
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
             this.ClientSize = new System.Drawing.Size(1044, 608);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.tbSearcher);
             this.Controls.Add(this.label1);
@@ -324,5 +336,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
+        private System.Windows.Forms.Label label2;
     }
 }
